@@ -2,15 +2,20 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CartPage from "./Pages/CartPage/CartPage";
+import Header from "./Components/Header/Header";
 
 export const routes = createBrowserRouter([
     {
         path: "/",
-        element: < CartPage />
+        element: <><Header /><CartPage/></>
+    },
+    {
+        path: "/Cart",
+        element: <CartPage />
     },
     {
         path: "*",
-        element: < NotFoundPage />
+        element: <NotFoundPage />
     }
     // {
     // element: <AdminRoutes /> ,

@@ -27,7 +27,7 @@ const Cart_ProductDetails = () => {
     }
     return (
         <>
-            <Box sx={{marginTop:'10em'}}>
+            <Box sx={{marginTop:'60px',paddingTop:'30px'}}>
                 <table>
                     <thead>
                         <tr>
@@ -39,42 +39,6 @@ const Cart_ProductDetails = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <Stack direction='row' spacing={3} sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                                    <img src={laVieEstBelle} alt="perfume" width={80} height={80}/>
-                                    <div>La vie est belle</div>
-                                </Stack>
-                            </td>
-                            <td>{orderDetails.productPrice}EGP</td>
-                            <td>
-                                <Box sx={{border:'1px solid gray',borderRadius:'5px',display:'flex',alignItems:'center',justifyContent:'space-around'}}>
-                                    <button className='counterAction' onClick={CountDown}>-</button>
-                                    <Box>{orderDetails.productQuantity}</Box>
-                                    <button className='counterAction' onClick={CountUp}>+</button>
-                                </Box>
-                            </td>
-                            <td>{total}EGP</td>
-                            <td><IoCloseOutline /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Stack direction='row' spacing={3} sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                                    <img src={laVieEstBelle} alt="perfume" width={80} height={80}/>
-                                    <div>La vie est belle</div>
-                                </Stack>
-                            </td>
-                            <td>{orderDetails.productPrice}EGP</td>
-                            <td>
-                                <Box sx={{border:'1px solid gray',borderRadius:'5px',display:'flex',alignItems:'center',justifyContent:'space-around'}}>
-                                    <button className='counterAction' onClick={CountDown}>-</button>
-                                    <Box>{orderDetails.productQuantity}</Box>
-                                    <button className='counterAction' onClick={CountUp}>+</button>
-                                </Box>
-                            </td>
-                            <td>{total}EGP</td>
-                            <td><IoCloseOutline /></td>
-                        </tr>
                         <tr>
                             <td>
                                 <Stack direction='row' spacing={3} sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
